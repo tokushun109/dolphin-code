@@ -22,8 +22,7 @@ export default function Home() {
             </Head>
             <main className={styles.container}>
                 <Section>
-                    <Header>Header</Header>
-                    Main
+                    <Header />
                 </Section>
                 <Section title='Service'>
                     <div></div>
