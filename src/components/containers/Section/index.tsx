@@ -9,8 +9,10 @@ type Props = {
 const Section = ({ title, children }: Props) => {
     return (
         <section className={styles.container}>
-            <h2>{title}</h2>
-            <div>{children}</div>
+            <div className={styles.content}>
+                <h2>{title}</h2>
+                <div>{children}</div>
+            </div>
         </section>
     )
 }

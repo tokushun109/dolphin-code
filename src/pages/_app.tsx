@@ -1,4 +1,4 @@
-import '@/pages/styles/globals.scss'
+import '@/pages/styles/globals/globals.scss'
 import 'ress'
 import type { AppProps } from 'next/app'
 

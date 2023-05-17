@@ -1,6 +1,10 @@
 .container {
     width: 100%;
-    height: 75vh;
-    position: relative;
-    border: 1px solid gray
+
+    .content {
+        max-width: $xxl-width;
+        margin: 0 auto;
+        height: 75vh;
+        border: 1px solid gray;
+    }
 }
