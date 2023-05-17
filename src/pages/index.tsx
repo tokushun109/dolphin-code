@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import styles from '@/pages/styles/Home.module.scss'
+import Section from '@/components/containers/Section'
+import Footer from '@/components/containers/Footer'
+import Header from '@/components/templates/Header'
 
 export default function Home() {
     return (
@@ -14,9 +17,19 @@ export default function Home() {
                     name='viewport'
                     content='width=device-width, initial-scale=1'
                 />
+                <meta name='robots' content='noindex' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <main className={styles.container}>メインコンテンツです。</main>
+            <main className={styles.container}>
+                <Section>
+                    <Header>Header</Header>
+                    Main
+                </Section>
+                <Section>Service</Section>
+                <Section>Company</Section>
+                <Section>Contact</Section>
+                <Footer>Footer</Footer>
+            </main>
         </>
     )
 }
