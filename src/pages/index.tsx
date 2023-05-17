@@ -25,9 +25,15 @@ export default function Home() {
                     <Header>Header</Header>
                     Main
                 </Section>
-                <Section>Service</Section>
-                <Section>Company</Section>
-                <Section>Contact</Section>
+                <Section title='Service'>
+                    <div></div>
+                </Section>
+                <Section title='Company'>
+                    <div></div>
+                </Section>
+                <Section title='Contact'>
+                    <div></div>
+                </Section>
                 <Footer>Footer</Footer>
             </main>
         </>
