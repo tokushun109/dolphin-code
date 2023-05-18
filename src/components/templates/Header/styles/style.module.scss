@@ -1,12 +1,22 @@
 .container {
     width: 100%;
-    padding: 8px;
+    padding: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    .logo {
+        font-size: 32px;
+        cursor: pointer;
+    }
+
     .navigation {
         display: flex;
-        gap: 12px;
+        gap: 40px;
+
+        li {
+            font-size: 20px;
+            cursor: pointer;
+        }
     }
 }

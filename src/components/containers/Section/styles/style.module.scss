@@ -1,10 +1,16 @@
 .container {
     width: 100%;
+    padding: 28px;
 
     .content {
         max-width: $xxl-width;
         margin: 0 auto;
         height: 75vh;
-        border: 1px solid gray;
+
+        .title {
+            font-size: 28px;
+            text-align: center;
+            padding: 28px;
+        }
     }
 }

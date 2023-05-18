@@ -4,6 +4,7 @@ import Main from '@/components/containers/Main'
 import Section from '@/components/containers/Section'
 import Footer from '@/components/containers/Footer'
 import Header from '@/components/templates/Header'
+import { NavigationEnum } from '@/components/templates/Header/types'
 
 export default function Home() {
     return (
@@ -25,13 +26,13 @@ export default function Home() {
                 <Main>
                     <Header />
                 </Main>
-                <Section title='Service'>
+                <Section id={NavigationEnum.Service} title='Service'>
                     <div></div>
                 </Section>
-                <Section title='Company'>
+                <Section id={NavigationEnum.Company} title='Company'>
                     <div></div>
                 </Section>
-                <Section title='Contact'>
+                <Section id={NavigationEnum.Contact} title='Contact'>
                     <div></div>
                 </Section>
                 <Footer>Footer</Footer>
