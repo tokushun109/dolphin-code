@@ -21,17 +21,17 @@ const Header = () => {
                 <ul className={styles.navigation}>
                     <li
                         onClick={() => {
-                            navClickHandler(NavigationEnum.Company)
-                        }}
-                    >
-                        Company
-                    </li>
-                    <li
-                        onClick={() => {
                             navClickHandler(NavigationEnum.Service)
                         }}
                     >
                         Service
+                    </li>
+                    <li
+                        onClick={() => {
+                            navClickHandler(NavigationEnum.Company)
+                        }}
+                    >
+                        Company
                     </li>
                     <li
                         onClick={() => {

@@ -25,7 +25,7 @@ const Section = ({ id, title, isDark = true, children }: Props) => {
                 >
                     {title}
                 </h2>
-                <div>{children}</div>
+                <div className={styles.main}>{children}</div>
             </div>
         </section>
     )

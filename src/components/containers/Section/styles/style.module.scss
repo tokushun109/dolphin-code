@@ -20,14 +20,23 @@
         margin: 0 auto;
 
         .title {
-            font-size: 48px;
+            font-size: 52px;
             text-align: center;
             padding: 28px;
-            font-family: $title-font-family;
 
             &.dark {
                 color: $text-white-color;
             }
+
+            &.light {
+                color: $title-text-color;
+            }
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

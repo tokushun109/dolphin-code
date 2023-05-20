@@ -21,6 +21,10 @@ export default function Home() {
                 />
                 <meta name='robots' content='noindex' />
                 <link rel='icon' href='/favicon.ico' />
+                <link
+                    href='https://fonts.googleapis.com/css2?family=Sigmar&display=swap'
+                    rel='stylesheet'
+                ></link>
             </Head>
             <main className={styles.container}>
                 <Main>
@@ -41,15 +45,13 @@ export default function Home() {
                     isDark={false}
                     title='Contact'
                 >
-                    <div className={styles.contactContainer}>
-                        <iframe
-                            src='https://docs.google.com/forms/d/e/1FAIpQLSc3W1n1WlM6kAtmIANV1Y-mKJDy3N9QGZopEPWX9syUzSyEgA/viewform?embedded=true'
-                            width='100%'
-                            height='1100'
-                        >
-                            読み込んでいます…
-                        </iframe>{' '}
-                    </div>
+                    <iframe
+                        src='https://docs.google.com/forms/d/e/1FAIpQLSc3W1n1WlM6kAtmIANV1Y-mKJDy3N9QGZopEPWX9syUzSyEgA/viewform?embedded=true'
+                        width='100%'
+                        height='1100'
+                    >
+                        読み込んでいます…
+                    </iframe>
                 </Section>
                 <Footer>Footer</Footer>
             </main>

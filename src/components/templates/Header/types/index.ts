@@ -1,7 +1,8 @@
 export const NavigationEnum = {
     Company: 'company',
     Service: 'service',
-    Contact: 'contact'
+    Contact: 'contact',
 } as const
 
-export type NavigationType = typeof NavigationEnum[keyof typeof NavigationEnum]
+export type NavigationType =
+    (typeof NavigationEnum)[keyof typeof NavigationEnum]
