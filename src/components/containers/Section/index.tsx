@@ -18,7 +18,13 @@ const Section = ({ id, title, isDark = true, children }: Props) => {
             }`}
         >
             <div className={styles.content}>
-                <h2 className={styles.title}>{title}</h2>
+                <h2
+                    className={`${styles.title} ${
+                        styles[isDark ? 'dark' : 'light']
+                    }`}
+                >
+                    {title}
+                </h2>
                 <div>{children}</div>
             </div>
         </section>

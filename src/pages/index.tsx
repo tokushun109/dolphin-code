@@ -26,17 +26,21 @@ export default function Home() {
                 <Main>
                     <Header />
                 </Main>
-                <Section id={NavigationEnum.Service} title='Service'>
-                    <div></div>
-                </Section>
                 <Section
-                    id={NavigationEnum.Company}
-                    title='Company'
+                    id={NavigationEnum.Service}
                     isDark={false}
+                    title='Service'
                 >
                     <div></div>
                 </Section>
-                <Section id={NavigationEnum.Contact} title='Contact'>
+                <Section id={NavigationEnum.Company} title='Company'>
+                    <div></div>
+                </Section>
+                <Section
+                    id={NavigationEnum.Contact}
+                    isDark={false}
+                    title='Contact'
+                >
                     <div className={styles.contactContainer}>
                         <iframe
                             src='https://docs.google.com/forms/d/e/1FAIpQLSc3W1n1WlM6kAtmIANV1Y-mKJDy3N9QGZopEPWX9syUzSyEgA/viewform?embedded=true'
@@ -44,7 +48,7 @@ export default function Home() {
                             height='1100'
                         >
                             読み込んでいます…
-                        </iframe>
+                        </iframe>{' '}
                     </div>
                 </Section>
                 <Footer>Footer</Footer>

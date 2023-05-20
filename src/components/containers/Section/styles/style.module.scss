@@ -2,6 +2,10 @@
     width: 100%;
     padding: 28px;
 
+    @include sm() {
+        padding: 0;
+    }
+
     &.dark {
         background: $bg-dark-color;
     }
@@ -16,9 +20,14 @@
         margin: 0 auto;
 
         .title {
-            font-size: 36px;
+            font-size: 48px;
             text-align: center;
             padding: 28px;
+            font-family: $title-font-family;
+
+            &.dark {
+                color: $text-white-color;
+            }
         }
     }
 }
