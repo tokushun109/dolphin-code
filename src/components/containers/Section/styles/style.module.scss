@@ -1,11 +1,12 @@
 .container {
     width: 100%;
     padding: 28px;
+    background: $bg-light-color;
 
     .content {
+        min-height: 75vh;
         max-width: $xxl-width;
         margin: 0 auto;
-        height: 75vh;
 
         .title {
             font-size: 28px;

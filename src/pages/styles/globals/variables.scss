@@ -4,3 +4,38 @@ $md-width: 720px;
 $lg-width: 960px;
 $xl-width: 1140px;
 $xxl-width: 1320px;
+
+// レスポンシブ設定
+@mixin sm() {
+    @media screen and (max-width: $sm-width) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media screen and (max-width: $md-width) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media screen and (max-width: $lg-width) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @media screen and (max-width: $xl-width) {
+        @content;
+    }
+}
+
+@mixin xxl() {
+    @media screen and (max-width: $xxl-width) {
+        @content;
+    }
+}
+
+// 色の設定
+$bg-light-color: #ffffff;
+$bg-light-color: #eeeeee;

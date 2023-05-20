@@ -33,7 +33,15 @@ export default function Home() {
                     <div></div>
                 </Section>
                 <Section id={NavigationEnum.Contact} title='Contact'>
-                    <div></div>
+                    <div className={styles.contactContainer}>
+                        <iframe
+                            src='https://docs.google.com/forms/d/e/1FAIpQLSc3W1n1WlM6kAtmIANV1Y-mKJDy3N9QGZopEPWX9syUzSyEgA/viewform?embedded=true'
+                            width='100%'
+                            height='1100'
+                        >
+                            読み込んでいます…
+                        </iframe>
+                    </div>
                 </Section>
                 <Footer>Footer</Footer>
             </main>

@@ -5,8 +5,12 @@
     align-items: center;
     justify-content: space-between;
 
+    @include lg() {
+        justify-content: center;
+    }
+
     .logo {
-        font-size: 32px;
+        font-size: 40px;
         cursor: pointer;
     }
 
@@ -14,8 +18,12 @@
         display: flex;
         gap: 40px;
 
+        @include lg() {
+            display: none;
+        }
+
         li {
-            font-size: 20px;
+            font-size: 24px;
             cursor: pointer;
         }
     }
