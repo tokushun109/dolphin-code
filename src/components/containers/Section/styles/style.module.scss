@@ -1,7 +1,14 @@
 .container {
     width: 100%;
     padding: 28px;
-    background: $bg-light-color;
+
+    &.dark {
+        background: $bg-dark-color;
+    }
+
+    &.light {
+        background: $bg-light-color;
+    }
 
     .content {
         min-height: 75vh;
@@ -9,7 +16,7 @@
         margin: 0 auto;
 
         .title {
-            font-size: 28px;
+            font-size: 36px;
             text-align: center;
             padding: 28px;
         }

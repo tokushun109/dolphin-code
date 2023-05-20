@@ -29,7 +29,11 @@ export default function Home() {
                 <Section id={NavigationEnum.Service} title='Service'>
                     <div></div>
                 </Section>
-                <Section id={NavigationEnum.Company} title='Company'>
+                <Section
+                    id={NavigationEnum.Company}
+                    title='Company'
+                    isDark={false}
+                >
                     <div></div>
                 </Section>
                 <Section id={NavigationEnum.Contact} title='Contact'>
