@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     color: $title-text-color;
+    font-family: $title-font-family;
 
     @include lg() {
         justify-content: center;
