@@ -5,6 +5,7 @@ import Section from '@/components/containers/Section'
 import Footer from '@/components/containers/Footer'
 import Header from '@/components/containers/Header'
 import { NavigationEnum } from '@/components/containers/Header/types'
+import Image from 'next/image'
 
 export default function Home() {
     return (
@@ -40,7 +41,42 @@ export default function Home() {
                     isDark={false}
                     title='Service'
                 >
-                    <div></div>
+                    <div className={styles.serviceContainer}>
+                        <div
+                            className={`${styles.serviceContainerWrapper} ${styles.blog}`}
+                        >
+                            <div>
+                                <h3 className={styles.title}>Blog</h3>
+                                <div className={styles.content}>
+                                    <div>
+                                        <a href='https://tokupapa.com/'>
+                                            <div
+                                                className={
+                                                    styles.imageContainer
+                                                }
+                                            >
+                                                <Image
+                                                    fill
+                                                    alt='tokupapa-blog'
+                                                    src='/img/tokupapa-blog.png'
+                                                    style={{
+                                                        objectFit: 'contain',
+                                                    }}
+                                                />
+                                            </div>
+                                            <div>とくぱぱのHSP応援ブログ</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={`${styles.serviceContainerWrapper}`}>
+                            <div>
+                                <h3 className={styles.title}>Book</h3>
+                                <div className={styles.content}>準備中</div>
+                            </div>
+                        </div>
+                    </div>
                 </Section>
                 <Section id={NavigationEnum.Company} title='Company'>
                     <div className={styles.companyContainer}>
