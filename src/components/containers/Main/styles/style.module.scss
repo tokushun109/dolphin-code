@@ -2,10 +2,65 @@
     width: 100%;
     height: 100vh;
     padding: 40px 80px;
-    background: $bg-light-color;
+    background: $bg-main-color;
 
     @include lg() {
         padding: 0 0 50px 0;
         height: auto;
     }
+
+    .mainContainer {
+        display: flex;
+        height: 100%;
+
+        @include lg() {
+            display: block;
+        }
+
+        .sentence {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            text-align: center;
+            font-family: $title-font-family;
+            color: $accent-color;
+
+            @include lg() {
+                width: 100%;
+                text-align: center;
+                height: auto;
+                padding-top: 160px;
+                font-size: 18px;
+            }
+        }
+
+        .image {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include lg() {
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin-top: 40px;
+            }
+
+            .imageWrapper {
+                background: $bg-light-color;
+                width: 600px;
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+        }
+    }
+
 }

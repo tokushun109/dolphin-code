@@ -5,7 +5,6 @@ import Section from '@/components/containers/Section'
 import Footer from '@/components/containers/Footer'
 import Header from '@/components/containers/Header'
 import { NavigationEnum } from '@/components/containers/Header/types'
-import Image from 'next/image'
 
 export default function Home() {
     return (
@@ -25,24 +24,7 @@ export default function Home() {
             </Head>
             <main className={styles.container}>
                 <Header />
-                <Main>
-                    <div className={styles.mainContainer}>
-                        <div className={styles.sentence}>
-                            <div>
-                                <p>繊細さんが</p>
-                                <p>自分らしく生きるお手伝いをしたい</p>
-                            </div>
-                        </div>
-                        <div className={styles.image}>
-                            <Image
-                                src='/img/main.png'
-                                width={250}
-                                height={350}
-                                alt='main'
-                            />
-                        </div>
-                    </div>
-                </Main>
+                <Main />
                 <Section id={NavigationEnum.About} title='About'>
                     <div></div>
                 </Section>
