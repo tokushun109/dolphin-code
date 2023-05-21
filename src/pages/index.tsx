@@ -3,8 +3,8 @@ import styles from '@/pages/styles/Home.module.scss'
 import Main from '@/components/containers/Main'
 import Section from '@/components/containers/Section'
 import Footer from '@/components/containers/Footer'
-import Header from '@/components/templates/Header'
-import { NavigationEnum } from '@/components/templates/Header/types'
+import Header from '@/components/containers/Header'
+import { NavigationEnum } from '@/components/containers/Header/types'
 import Image from 'next/image'
 
 export default function Home() {
@@ -100,7 +100,7 @@ export default function Home() {
                         読み込んでいます…
                     </iframe>
                 </Section>
-                <Footer>Footer</Footer>
+                <Footer />
             </main>
         </>
     )

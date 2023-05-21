@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import styles from './styles/style.module.scss'
-import { NavigationType } from '@/components/templates/Header/types'
+import { NavigationType } from '@/components/containers/Header/types'
 
 type Props = {
     id: NavigationType

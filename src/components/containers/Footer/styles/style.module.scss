@@ -1,5 +1,24 @@
 .container {
     width: 100%;
-    min-height: 20vh;
     background: $bg-footer-color;
+    color: $text-white-color;
+    padding: 32px;
+    text-align: center;
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        font-size: 24px;
+        cursor: pointer;
+        margin-bottom: 16px;
+        font-family: $title-font-family;
+
+        li {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
 }

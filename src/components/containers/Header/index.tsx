@@ -1,9 +1,10 @@
 import styles from './styles/style.module.scss'
 import Router from 'next/router'
 import { NavigationEnum, NavigationType } from './types'
+import { scrollToNavigationId } from '@/utils/link'
 
 const navClickHandler = (id: NavigationType) => {
-    Router.push(`/#${id}`)
+    scrollToNavigationId(id)
 }
 
 const Header = () => {
