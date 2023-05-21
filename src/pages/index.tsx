@@ -70,7 +70,7 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={`${styles.serviceContainerWrapper}`}>
+                        <div className={styles.serviceContainerWrapper}>
                             <div>
                                 <h3 className={styles.title}>Book</h3>
                                 <div className={styles.content}>準備中</div>
