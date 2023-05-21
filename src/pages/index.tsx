@@ -54,7 +54,38 @@ export default function Home() {
                     <div></div>
                 </Section>
                 <Section id={NavigationEnum.Company} title='Company'>
-                    <div></div>
+                    <div className={styles.companyContainer}>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>会社名</th>
+                                    <td>合同会社ドルフィンコード</td>
+                                </tr>
+                                <tr>
+                                    <th>代表者名</th>
+                                    <td>徳永 駿太</td>
+                                </tr>
+                                <tr>
+                                    <th>資本金</th>
+                                    <td>1,000,000円</td>
+                                </tr>
+                                <tr>
+                                    <th>所在地</th>
+                                    <td>
+                                        東京都新宿区西新宿3丁目3番13号西新宿水間ビル2F
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>設立年月日</th>
+                                    <td>令和5年4月7日</td>
+                                </tr>
+                                <tr>
+                                    <th>電話番号</th>
+                                    <td>準備中</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </Section>
                 <Section
                     id={NavigationEnum.Contact}

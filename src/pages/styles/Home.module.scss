@@ -43,4 +43,31 @@
             }
         }
     }
+
+    .companyContainer {
+        table {
+            table-layout: auto;
+            padding: 40px;
+            background: $bg-light-color;
+            font-size: 20px;
+            border-radius: 16px;
+
+            @include sm() {
+                margin-bottom: 48px;
+            }
+
+            tbody {
+
+                tr {
+
+                    th {
+                        line-height: 80px;
+                        text-align: left;
+                        width: 150px
+                    }
+                }
+            }
+        }
+    }
+
 }
