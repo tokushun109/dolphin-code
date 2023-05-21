@@ -26,7 +26,14 @@ export default function Home() {
                 <Header />
                 <Main />
                 <Section id={NavigationEnum.About} title='About'>
-                    <div></div>
+                    <div className={styles.aboutContainer}>
+                        <p>繊細で傷つきやすい性格に悩み</p>
+                        <p>自分らしく生きることができない方々に向けて</p>
+                        <p>
+                            <span>繊細さを強みに変えて生きることを</span>
+                        </p>
+                        <p>サポートする情報を発信しています</p>
+                    </div>
                 </Section>
                 <Section
                     id={NavigationEnum.Service}

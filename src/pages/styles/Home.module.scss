@@ -1,5 +1,32 @@
 .container {
+    .aboutContainer {
+        text-align: center;
+        background: $bg-light-color;
+        padding: 40px;
+        border-radius: 16px;
+        font-size: 20px;
+
+        @include sm() {
+            padding: 12px;
+            margin-bottom: 48px;
+            font-size: 14px;
+        }
+
+        p {
+            line-height: 60px;
+
+            span {
+                font-weight: 600;
+                color: $accent-color;
+            }
+        }
+    }
+
     .companyContainer {
+        @include sm() {
+            padding: 12px
+        }
+
         table {
             table-layout: auto;
             padding: 40px;
@@ -8,7 +35,9 @@
             border-radius: 16px;
 
             @include sm() {
+                padding: 12px;
                 margin-bottom: 48px;
+                font-size: 14px;
             }
 
             tbody {
