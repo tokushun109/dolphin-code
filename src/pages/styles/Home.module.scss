@@ -1,0 +1,46 @@
+.container {
+    .mainContainer {
+        display: flex;
+        height: 100%;
+
+        @include lg() {
+            display: block;
+        }
+
+        .sentence {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            text-align: center;
+            font-family: $title-font-family;
+            color: $accent-color;
+
+            @include lg() {
+                width: 100%;
+                text-align: center;
+                height: auto;
+                padding-top: 160px;
+                font-size: 18px;
+            }
+
+        }
+
+        .image {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include lg() {
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+    }
+}

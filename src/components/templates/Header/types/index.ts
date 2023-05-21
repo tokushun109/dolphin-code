@@ -1,6 +1,7 @@
 export const NavigationEnum = {
-    Company: 'company',
+    About: 'about',
     Service: 'service',
+    Company: 'company',
     Contact: 'contact',
 } as const
 

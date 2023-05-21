@@ -1,6 +1,7 @@
 .container {
+    position: absolute;
     width: 100%;
-    padding: 24px;
+    padding: 40px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +21,7 @@
         }
 
         @include lg() {
-            font-size: 60px;
+            font-size: 40px;
         }
     }
 

@@ -21,6 +21,13 @@ const Header = () => {
                 <ul className={styles.navigation}>
                     <li
                         onClick={() => {
+                            navClickHandler(NavigationEnum.About)
+                        }}
+                    >
+                        About
+                    </li>
+                    <li
+                        onClick={() => {
                             navClickHandler(NavigationEnum.Service)
                         }}
                     >
