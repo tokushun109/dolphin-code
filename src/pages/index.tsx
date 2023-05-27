@@ -106,7 +106,7 @@ export default function Home() {
                                 </tr>
                                 <tr>
                                     <th>電話番号</th>
-                                    <td>準備中</td>
+                                    <td>050-5471-0517</td>
                                 </tr>
                             </tbody>
                         </table>
